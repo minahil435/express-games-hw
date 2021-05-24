@@ -87,7 +87,7 @@ router.put("/update-game/:id", function (req, res) {
     }
 });
 
-router.delete("/delete-product-by-id/:id", function (req, res) {
+router.delete("/delete-game/:id", function (req, res) {
     const { id } = req.params;
     let foundProductIndex = games.findIndex((item) => {
         return item.id === id;
